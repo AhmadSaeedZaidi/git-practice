@@ -11,6 +11,7 @@ int add(int (&value)[N]) {
     return sum;
 }
 
+template <size_t N>
 int product(int (&value)[N]){
     int prod = 1;
     for (auto v : value) {
@@ -32,6 +33,6 @@ int max(int(&value)[N]) {
 int main() {
     int value[] = {1,2,3,4};
     std::print("sum: {}\n",add(value));
-    std::print("prod {}\n", prod(value))
+    std::print("prod {}\n", product(value));
     std::print("another small change\n");
 }
