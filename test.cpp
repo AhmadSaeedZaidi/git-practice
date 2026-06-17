@@ -17,4 +17,5 @@ int add(int (&value)[N]) {
 int main() {
     int value[] = {1,2,3,4};
     std::print("sum: {}\n",add(value));
+    std::print("another small change\n");
 }
