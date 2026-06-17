@@ -11,6 +11,15 @@ int add(int (&value)[N]) {
     return sum;
 }
 
+template <size_t N>
+int product(int (&value)[N]){
+    int prod = 1;
+    for (auto v : value) {
+        prod*=v;
+    }
+    return prod;
+}
+
 // small comment here to add a change in the commit history
 template <size_t N>
 int max(int(&value)[N]) {
@@ -24,5 +33,6 @@ int max(int(&value)[N]) {
 int main() {
     int value[] = {1,2,3,4};
     std::print("sum: {}\n",add(value));
+    std::print("prod {}\n", product(value));
     std::print("another small change\n");
 }
