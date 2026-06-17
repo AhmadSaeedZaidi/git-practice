@@ -12,6 +12,8 @@ int add(int (&value)[N]) {
     return sum;
 }
 
+// small comment here to add a change in the commit history
+
 int main() {
     int value[] = {1,2,3,4};
     std::print("sum: {}\n",add(value));
