@@ -1,0 +1,12 @@
+# ignore everything
+*
+# except cpp code and markdown
+!*.cpp
+!*.h
+!*.md
+
+# and of course directories
+!*/
+
+# and itself just in case
+!.gitignore
